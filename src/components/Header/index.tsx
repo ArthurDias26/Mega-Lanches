@@ -6,7 +6,7 @@ import { IoRestaurantOutline, IoStorefrontOutline, IoCartOutline  } from "react-
 export default function Header() {
   return (
     <header>
-        <div className="md:hidden absolute left-0 bottom-0 w-full h-[80px] bg-primary">
+        <div className="md:hidden fixed left-0 bottom-0 w-full h-[80px] bg-primary">
             <div className="flex justify-around items-center text-white h-full">
                 <div className="hover:text-secondary transition duration-300">
                     <Link href={'/'} className="flex flex-col justify-center items-center">
@@ -38,7 +38,7 @@ export default function Header() {
             </div>
         </div>
 
-        <div className="hidden md:block absolute left-0 top-0 w-full h-[80px] bg-primary">
+        <div className="hidden md:block fixed left-0 top-0 w-full h-[80px] bg-primary">
             <div className="flex justify-between items-center px-5 h-full">
                 <h2 className="text-white text-3xl font-displayTitle">
                     <Link href={'/'}>MEGA LANCHES</Link>

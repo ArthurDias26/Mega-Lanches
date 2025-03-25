@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import ItemCard from "@/components/ItemCard";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       </section>
 
       <section>
-        
+          <ItemCard title="Pizza 4 Queijos" imageUrl="https://i.imgur.com/rbVQjaG.jpeg" ingredients="Queijo, requeijão, oregano e parmesão ralado." price={59.99}/>
       </section>
     </div>
   );
