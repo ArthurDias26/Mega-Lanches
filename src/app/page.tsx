@@ -1,10 +1,12 @@
+"use client"
+
 import Button from "@/components/Button";
-import ItemCard from "@/components/ItemCard";
 
 export default function Home() {
+
   return (
     <div className="">
-      <section className="relative">
+      <section className="relative -z-10">
         <div className="bg-black/40 absolute top-0 left-0 h-full w-full"></div>
 
         <div className="bg-[url(/images/home/hero-background.jpg)] bg-center bg-cover h-[45vh] flex justify-center items-center">
@@ -24,9 +26,7 @@ export default function Home() {
 
       </section>
 
-      <section>
-          <ItemCard title="Pizza 4 Queijos" imageUrl="https://i.imgur.com/rbVQjaG.jpeg" ingredients="Queijo, requeijão, oregano e parmesão ralado." price={59.99}/>
-      </section>
+      
     </div>
   );
 }

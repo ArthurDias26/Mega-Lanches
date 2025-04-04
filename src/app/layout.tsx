@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import { UserProvider } from "@/utilis/contexts/userContext";
 
 export const metadata: Metadata = {
   title: "Mega Lanches",
@@ -16,7 +17,9 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className="mb-20 md:mb-0 md:mt-20">
         <Header/>
-        {children}
+         <UserProvider>
+          {children}
+         </UserProvider>
       </body>
     </html>
   );
