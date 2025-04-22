@@ -17,6 +17,7 @@ interface MenuTypes{
 }
 
 export default function Menu() {
+  
 
   const [menuData, setMenuData] = useState<MenuTypes[]>([])
 

@@ -3,11 +3,13 @@
 import { createContext, ReactNode, useState } from "react"
 
 interface ItemCart {
-    name: string,
+    title: string,
     id: string,
-    price: number,
     quantity: number,
+    ingredients: string,
     imageUrl: string,
+    price: number,
+    discount?: number
     additional: {
         name: string,
         price: number,
@@ -75,7 +77,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
             if(prevCart[itemIndex].quantity > 1){
                 return prevCart.map((item, index) =>
-                    index === itemIndex ? { ...item, quantity: item.quantity + 1 } : item
+                    index === itemIndex ? { ...item, quantity: item.quantity - 1 } : item
                 )
             }
             else{
